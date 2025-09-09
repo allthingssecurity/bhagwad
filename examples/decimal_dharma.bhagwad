@@ -1,0 +1,12 @@
+// Decimal Dharma - Counting from 1 to 10 through the cycle of Karma
+// Demonstrates the Karma (loop) construct in Bhagwad
+
+arjuna {
+    manifest "The eternal cycle begins..."
+    
+    karma i from 1 to 10 {
+        manifest i
+    }
+    
+    manifest "The cycle is complete. Om Shanti."
+}

@@ -1,0 +1,25 @@
+// Duality Detection - Determining the even or odd nature of numbers
+// Demonstrates Dharma (conditions), Shloka (functions), and the duality of existence
+
+shloka checkDuality(sattva number) {
+    dharma (number % 2 == 0) {
+        manifest number + " follows the even path of balance"
+    } adharma {
+        manifest number + " follows the odd path of uniqueness"  
+    }
+}
+
+arjuna {
+    manifest "🕉️  Exploring the duality of numbers..."
+    
+    // Test some sacred numbers
+    sankalpa SACRED_SEVEN = 7
+    sankalpa SACRED_EIGHT = 8
+    sankalpa DIVINE_NUMBER = 108
+    
+    checkDuality(SACRED_SEVEN)
+    checkDuality(SACRED_EIGHT)
+    checkDuality(DIVINE_NUMBER)
+    
+    manifest "In duality, we find unity. In numbers, we find truth."
+}
