@@ -1,0 +1,137 @@
+// Sorting Sadhana - Bringing Order to Chaos
+// Like organizing thoughts in meditation, we arrange elements in harmony
+
+shloka bubbleSortMeditation(cosmic sattva[] arr) -> cosmic sattva[] {
+    maya sattva n = arr.length
+    manifest "🕉️  Beginning Bubble Sort Meditation with " + n + " elements"
+    manifest "Initial chaos: " + arrayToString(arr) + "\n"
+    
+    karma i from 0 to (n - 1) {
+        maya tamas swapped = false
+        manifest "--- Pass " + (i + 1) + " ---"
+        
+        karma j from 0 to (n - i - 2) {
+            dharma (arr[j] > arr[j + 1]) {
+                // Swap elements - restore cosmic order
+                maya sattva temp = arr[j]
+                arr[j] = arr[j + 1]
+                arr[j + 1] = temp
+                swapped = true
+                
+                manifest "  Swapped " + arr[j + 1] + " and " + arr[j] + " -> " + arrayToString(arr)
+            }
+        }
+        
+        dharma (!swapped) {
+            manifest "  Perfect harmony achieved! No more swaps needed."
+            break
+        }
+    }
+    
+    manifest "\nFinal enlightened order: " + arrayToString(arr)
+    moksha arr
+}
+
+shloka quickSortMeditation(cosmic sattva[] arr, sattva low, sattva high) -> cosmic sattva[] {
+    dharma (low < high) {
+        maya sattva pivotIndex = partition(arr, low, high)
+        quickSortMeditation(arr, low, pivotIndex - 1)
+        quickSortMeditation(arr, pivotIndex + 1, high)
+    }
+    moksha arr
+}
+
+shloka partition(cosmic sattva[] arr, sattva low, sattva high) -> sattva {
+    maya sattva pivot = arr[high]
+    maya sattva i = low - 1
+    
+    karma j from low to (high - 1) {
+        dharma (arr[j] <= pivot) {
+            i = i + 1
+            // Swap elements
+            maya sattva temp = arr[i]
+            arr[i] = arr[j]
+            arr[j] = temp
+        }
+    }
+    
+    // Place pivot in correct position
+    maya sattva temp = arr[i + 1]
+    arr[i + 1] = arr[high]
+    arr[high] = temp
+    
+    moksha i + 1
+}
+
+shloka arrayToString(cosmic sattva[] arr) -> rajas {
+    maya rajas result = "["
+    karma i from 0 to arr.length {
+        result = result + arr[i]
+        dharma (i < arr.length - 1) {
+            result = result + ", "
+        }
+    }
+    result = result + "]"
+    moksha result
+}
+
+shloka binarySearchMeditation(cosmic sattva[] sortedArr, sattva target) -> sattva {
+    maya sattva left = 0
+    maya sattva right = sortedArr.length - 1
+    maya sattva attempts = 0
+    
+    manifest "\n🔍 Binary Search Meditation - Finding " + target + " in the cosmic order"
+    
+    karma while (left <= right) {
+        attempts = attempts + 1
+        maya sattva mid = (left + right) / 2
+        manifest "  Attempt " + attempts + ": Checking position " + mid + " (value: " + sortedArr[mid] + ")"
+        
+        dharma (sortedArr[mid] == target) {
+            manifest "  🎯 Enlightenment! Found " + target + " at position " + mid + " after " + attempts + " meditations"
+            moksha mid
+        } dharma (sortedArr[mid] < target) {
+            manifest "    Target is in the upper realm, focusing there..."
+            left = mid + 1
+        } adharma {
+            manifest "    Target is in the lower realm, focusing there..."
+            right = mid - 1
+        }
+    }
+    
+    manifest "  Target " + target + " not found in this cosmic arrangement"
+    moksha -1
+}
+
+arjuna {
+    manifest "=== SORTING SADHANA - BRINGING ORDER TO CHAOS ==="
+    manifest "In meditation, we organize our thoughts. In programming, we organize data.\n"
+    
+    // Create an array of sacred numbers in chaos
+    cosmic sattva[] sacredNumbers = [108, 9, 27, 3, 81, 7, 21, 1, 63]
+    
+    manifest "Original sacred numbers in chaos:"
+    manifest arrayToString(sacredNumbers)
+    manifest ""
+    
+    // Demonstrate bubble sort meditation
+    cosmic sattva[] bubbleSorted = bubbleSortMeditation(sacredNumbers.copy())
+    
+    manifest "\n" + "="*50
+    manifest "\n=== QUICK SORT ENLIGHTENMENT ==="
+    cosmic sattva[] quickSorted = [108, 9, 27, 3, 81, 7, 21, 1, 63]
+    manifest "Applying Quick Sort meditation..."
+    quickSortMeditation(quickSorted, 0, quickSorted.length - 1)
+    manifest "Quick Sort result: " + arrayToString(quickSorted)
+    
+    // Demonstrate binary search
+    binarySearchMeditation(bubbleSorted, 27)
+    binarySearchMeditation(bubbleSorted, 108)
+    binarySearchMeditation(bubbleSorted, 50)  // Not found case
+    
+    manifest "\n🌟 Sorting Wisdom:"
+    manifest "   Chaos becomes order through patient, systematic practice"
+    manifest "   Each comparison brings us closer to perfect arrangement"
+    manifest "   Once ordered, finding becomes effortless (binary search)"
+    manifest "Om Shanti - In order we find peace, in peace we find truth."
+}

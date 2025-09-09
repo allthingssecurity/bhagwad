@@ -1,0 +1,64 @@
+// Factorial Meditation - The Power of Accumulated Karma
+// Each action builds upon all previous actions, creating exponential growth
+
+shloka factorialMeditation(sattva n) -> sattva {
+    dharma (n <= 1) {
+        moksha 1
+    } adharma {
+        moksha n * factorialMeditation(n - 1)
+    }
+}
+
+shloka iterativeFactorial(sattva n) -> sattva {
+    maya sattva result = 1
+    karma i from 1 to n {
+        result = result * i
+    }
+    moksha result
+}
+
+shloka factorialJourney(sattva limit) {
+    manifest "🕉️  Factorial Meditation - The Accumulated Power of Actions"
+    manifest "Each step multiplies the power of all previous steps\n"
+    
+    karma i from 0 to limit {
+        maya sattva recursive = factorialMeditation(i)
+        maya sattva iterative = iterativeFactorial(i)
+        
+        manifest i + "! = " + recursive + " (Recursive path = Iterative path: " + (recursive == iterative) + ")"
+    }
+}
+
+shloka permutationWisdom(sattva n, sattva r) {
+    dharma (r > n) {
+        manifest "Cannot arrange " + r + " items from " + n + " - Seeking the impossible"
+        moksha
+    }
+    
+    maya sattva permutations = factorialMeditation(n) / factorialMeditation(n - r)
+    manifest "P(" + n + ", " + r + ") = " + permutations + " ways to arrange " + r + " items from " + n
+}
+
+arjuna {
+    sankalpa FACTORIAL_LIMIT = 10
+    
+    manifest "=== FACTORIAL ENLIGHTENMENT ==="
+    manifest "Understanding how actions accumulate exponentially\n"
+    
+    // Calculate factorials up to limit
+    factorialJourney(FACTORIAL_LIMIT)
+    
+    manifest "\n=== PERMUTATION WISDOM ==="
+    manifest "How many ways can we arrange the elements of existence?\n"
+    
+    // Demonstrate permutations
+    permutationWisdom(5, 3)
+    permutationWisdom(7, 2)
+    permutationWisdom(4, 4)
+    permutationWisdom(3, 5)  // Impossible case
+    
+    manifest "\n🌟 In the mathematics of karma:"
+    manifest "   Every action multiplies with all previous actions"
+    manifest "   Small beginnings lead to infinite possibilities"
+    manifest "Om Shanti - May our actions accumulate toward enlightenment."
+}

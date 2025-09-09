@@ -1,0 +1,74 @@
+// Prime Meditation - Discovering the Indivisible Truth
+// Prime numbers are like enlightened souls - they cannot be broken down further
+
+shloka isPrimeMeditation(sattva number) -> tamas {
+    dharma (number <= 1) {
+        moksha false
+    }
+    dharma (number == 2) {
+        moksha true
+    }
+    dharma (number % 2 == 0) {
+        moksha false
+    }
+    
+    // Meditate on divisibility up to square root
+    maya sattva i = 3
+    karma while (i * i <= number) {
+        dharma (number % i == 0) {
+            moksha false
+        }
+        i = i + 2
+    }
+    moksha true
+}
+
+shloka primeEnlightenment(sattva limit) {
+    manifest "🕉️  Prime Meditation - Seeking the Indivisible Truth"
+    manifest "Prime numbers are like enlightened souls - pure and indivisible\n"
+    
+    maya sattva primeCount = 0
+    manifest "The journey to find all primes up to " + limit + ":\n"
+    
+    karma i from 2 to limit {
+        dharma (isPrimeMeditation(i)) {
+            primeCount = primeCount + 1
+            manifest "Prime " + primeCount + ": " + i + " - An indivisible truth"
+        }
+    }
+    
+    manifest "\nTotal enlightened numbers found: " + primeCount
+}
+
+shloka twinPrimeMeditation(sattva limit) {
+    manifest "\n=== TWIN PRIME MEDITATION ==="
+    manifest "Seeking pairs of primes separated by 2 - souls walking together\n"
+    
+    maya sattva twinCount = 0
+    karma i from 3 to (limit - 2) {
+        dharma (isPrimeMeditation(i) && isPrimeMeditation(i + 2)) {
+            twinCount = twinCount + 1
+            manifest "Twin Primes " + twinCount + ": (" + i + ", " + (i + 2) + ") - Souls in harmony"
+        }
+    }
+    
+    manifest "\nTotal twin prime pairs found: " + twinCount
+}
+
+arjuna {
+    sankalpa MEDITATION_LIMIT = 50
+    
+    manifest "=== PRIME NUMBER ENLIGHTENMENT ==="
+    manifest "In the realm of numbers, some stand alone in their purity\n"
+    
+    // Find all primes
+    primeEnlightenment(MEDITATION_LIMIT)
+    
+    // Find twin primes
+    twinPrimeMeditation(MEDITATION_LIMIT)
+    
+    manifest "\n🌟 In mathematics as in spirituality:"
+    manifest "   Some truths cannot be divided or diminished"
+    manifest "   They exist in their pure, original form"
+    manifest "Om Shanti - May we find such purity in our code and consciousness."
+}

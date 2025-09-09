@@ -13,12 +13,13 @@
 - **Dharmic Control Flow**: Dharma (if/else), Karma (loops), Moksha (return)
 - **Modular Design**: Yuga (modules/namespaces) for organized code
 - **Error Handling**: Meditation (try) and Disturbance (catch) blocks
+- **Advanced Algorithms**: Fibonacci, sorting, tree traversals, matrix operations
 
 ## 🚀 Quick Start
 
 ### Installation
 ```bash
-git clone <repository>
+git clone https://github.com/allthingssecurity/bhagwad.git
 cd bhagwad
 ```
 
@@ -111,6 +112,86 @@ arjuna {
 }
 ```
 
+### 4. Fibonacci Enlightenment (Advanced Recursion)
+```bhagwad
+// The Divine Spiral of Growth - Each number contains the wisdom of its predecessors
+shloka fibonacciMeditation(sattva n) -> sattva {
+    dharma (n <= 1) {
+        moksha n
+    } adharma {
+        moksha fibonacciMeditation(n - 1) + fibonacciMeditation(n - 2)
+    }
+}
+
+arjuna {
+    manifest "🕉️  The Sacred Fibonacci Sequence"
+    karma i from 0 to 12 {
+        maya sattva fib = fibonacciMeditation(i)
+        manifest "F(" + i + ") = " + fib
+    }
+}
+```
+
+### 5. Prime Meditation (Complex Algorithms)
+```bhagwad
+// Discovering numbers that cannot be divided - like enlightened souls
+shloka isPrimeMeditation(sattva number) -> tamas {
+    dharma (number <= 1) { moksha false }
+    dharma (number == 2) { moksha true }
+    
+    maya sattva i = 3
+    karma while (i * i <= number) {
+        dharma (number % i == 0) { moksha false }
+        i = i + 2
+    }
+    moksha true
+}
+```
+
+### 6. Sorting Sadhana (Bubble & Quick Sort)
+```bhagwad
+// Bringing order to chaos through systematic meditation
+shloka bubbleSortMeditation(cosmic sattva[] arr) -> cosmic sattva[] {
+    maya sattva n = arr.length
+    karma i from 0 to (n - 1) {
+        karma j from 0 to (n - i - 2) {
+            dharma (arr[j] > arr[j + 1]) {
+                // Swap elements - restore cosmic order
+                maya sattva temp = arr[j]
+                arr[j] = arr[j + 1]
+                arr[j + 1] = temp
+            }
+        }
+    }
+    moksha arr
+}
+```
+
+### 7. Tree of Life Meditation (Binary Trees)
+```bhagwad
+// Exploring branching data structures like consciousness itself
+yuga TreeOfLife {
+    shloka inorderMeditation(TreeNode root) {
+        dharma (root != null) {
+            inorderMeditation(root.left)
+            manifest "Visiting: " + root.data
+            inorderMeditation(root.right)
+        }
+    }
+}
+```
+
+### 8. Matrix Meditation (Linear Algebra)
+```bhagwad
+// Transformations in the cosmic grid of reality
+yuga MatrixSadhana {
+    shloka multiplyMatrices(cosmic sattva[][] a, cosmic sattva[][] b) -> cosmic sattva[][] {
+        // Cosmic matrix multiplication following universal laws
+        // Implementation demonstrates nested loops and array operations
+    }
+}
+```
+
 ## 🛠️ Usage
 
 ### Command Line Interface
@@ -163,19 +244,61 @@ bhagwad/
 │   ├── interpreter.py     # Main orchestrator
 │   └── ast_nodes.py       # AST node definitions
 ├── examples/
-│   ├── om_manifestation.bhagwad
-│   ├── decimal_dharma.bhagwad
-│   ├── duality_detection.bhagwad
-│   └── cosmic_mathematics.bhagwad
+│   ├── om_manifestation.bhagwad           # Hello World
+│   ├── decimal_dharma.bhagwad             # Basic loops
+│   ├── duality_detection.bhagwad          # Conditionals
+│   ├── cosmic_mathematics.bhagwad         # Mathematics
+│   ├── fibonacci_enlightenment.bhagwad    # Advanced recursion
+│   ├── prime_meditation.bhagwad           # Prime algorithms
+│   ├── factorial_meditation.bhagwad       # Factorial & permutations
+│   ├── sorting_sadhana.bhagwad           # Sorting algorithms
+│   ├── matrix_meditation.bhagwad         # Matrix operations
+│   └── tree_of_life_meditation.bhagwad   # Binary trees
 ├── docs/
 │   └── LANGUAGE.md        # Complete language specification
 └── README.md              # This file
 ```
 
-## 📚 Documentation
+## 📚 Advanced Examples
 
-- [`LANGUAGE.md`](docs/LANGUAGE.md) - Complete language specification with spiritual parallels
-- [`examples/`](examples/) - Sample programs demonstrating all language features
+### 🌀 Fibonacci Enlightenment
+**File**: `examples/fibonacci_enlightenment.bhagwad`
+- Recursive Fibonacci with golden ratio convergence
+- Demonstrates recursive function calls
+- Shows mathematical beauty in code
+
+### 🔢 Prime Meditation 
+**File**: `examples/prime_meditation.bhagwad`
+- Prime number detection algorithms
+- Twin prime discovery
+- Complex conditional logic and optimization
+
+### 🧮 Factorial Meditation
+**File**: `examples/factorial_meditation.bhagwad`  
+- Recursive vs iterative factorial computation
+- Permutation calculations
+- Mathematical function composition
+
+### 🔄 Sorting Sadhana
+**File**: `examples/sorting_sadhana.bhagwad`
+- Bubble sort with step-by-step visualization
+- Quick sort implementation
+- Binary search on sorted arrays
+- Algorithm complexity demonstration
+
+### 🌳 Tree of Life Meditation
+**File**: `examples/tree_of_life_meditation.bhagwad`
+- Binary search tree implementation
+- Tree traversal algorithms (inorder, preorder, postorder)
+- Recursive tree operations
+- Search and insertion algorithms
+
+### ⚡ Matrix Meditation
+**File**: `examples/matrix_meditation.bhagwad`
+- Matrix creation and manipulation
+- Matrix multiplication algorithm
+- Identity matrix generation
+- Nested loop structures
 
 ## 🎯 Sacred Numbers in Bhagwad
 
@@ -216,6 +339,13 @@ yuga Mathematics {
     }
 }
 ```
+
+### Complex Algorithm Examples
+- **Recursive Functions**: Fibonacci, factorial, tree traversals
+- **Sorting Algorithms**: Bubble sort, quick sort with partitioning
+- **Search Algorithms**: Binary search, tree search
+- **Data Structures**: Binary trees, matrices, dynamic arrays
+- **Mathematical Computations**: Prime detection, permutations, matrix operations
 
 ## 🤝 Contributing
 
